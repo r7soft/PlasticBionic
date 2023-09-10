@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cover {
+    position: relative;
+    position: fixed;
+    z-index: 9999999999;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#covertext {
+    overflow: hidden;
+}
+
+#covertext h1 {
+    color: #fff;
+    font-family: gilroy;
+    font-size: 8.5vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#covertext h1 span {
+    display: inline-block;
+    transform: translateY(250%);
+}
+
+#cover .bgb {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#cover #bgBox1 {
+    background-color: rgb(93, 214, 214);
+    background-image: url(loader_1@2.png);
+    background-position: center;
+    background-size: cover;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+
+
+}
+
+#cover #bgBox2 {
+    background-color: rgb(79, 224, 130);
+    background-image: url(loader_2@2.png);
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    width: 20vw;
+    opacity: 0;
+
+}
+
+#cover #bgBox3 {
+    background-color: rgb(218, 144, 71);
+    background-image: url(loader_3@2.png);
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    width: 45vw;
+    opacity: 0;
+}
+
+#cover #bgBox4 {
+    background-color: #fff;
+    background-image: url(GOOGLE_Wallpaper_Illustration_H.jpg);
+
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    width: 20vw;
+    opacity: 0;
+}
+
+#main {
+    position: relative;
+    /* width: 100%; */
+    background-color: #494949;
+
+}
+#navcont{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 999999;
+
+}
+#nav:hover{
+    cursor: pointer;
+}
+#nav {
+    /* position: fixed; */
+    text-align: center;
+    justify-content: space-between;
+    /* z-index: 999999; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    opacity: 1;
+    position: relative;
+}
+
+.options {
+    position: relative;
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    color: #fff;
+    /* backdrop-filter: ;  */
+}
+
+.options:nth-child(2),
+.options:nth-child(3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.344);
+}
+
+.options .cover {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    backdrop-filter: blur(15px);
+    /* border-bottom: 1px solid #6c6c6c; */
+}
+
+.options .cover .text_nav {
+    height: 100%;
+    width: 100%;
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.options:nth-child(1) .cover {
+    height: 3px;
+    background-color: #fff;
+}
+
+.options:nth-child(1) .cover .text_nav {
+    color: #000;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.maintext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+#maintext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+#maintext h1 {
+    font-size: 9vw;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    /* opacity: 0; */
+    /* transform: translateY(250%); */
+
+
+}
+
+.maintext h1 {
+    font-size: 9vw;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    /* opacity: 0; */
+    /* transform: translateY(250%); */
+
+
+}
+#maintext h1 span{
+    display: inline-block;
+    transform: translateY(250%);
+}
+.maintext h1 span{
+    display: inline-block;
+    transform: translateY(150%);
+}
+#maintext :hover {
+    cursor: pointer;
+}
+
+#maintext .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .9vw;
+    background-color: #fff;
+    width: 0%;
+
+}
+
+.maintext :hover {
+    cursor: pointer;
+}
+
+.maintext .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .9vw;
+    background-color: #fff;
+    width: 0%;
+
+}
+
+#home {
+    background-image: url(GOOGLE_Wallpaper_Illustration_H.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#second {
+    background-image: url(ANTINOMY_Illustration_ArtDirection4_H.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#third {
+    background-image: url(36DAYSOFTYPE_Typography_Illustration_2021_H.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#fourth {
+    background-image: url(HUBLOT_Corporate_Illustration_1_H.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#nav2{
+    /* position: fixed; */
+    /* top: 2.5%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%);  */
+    width: 100%;
+    height: 100px;
+    /* opacity: 0; */
+    
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+   
+
+
+}
+#nav2 h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+#nav2 h3:hover{
+    cursor: pointer;
+
+}
+
+#nav2 #right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+#right h5 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1vw;
+
+
+}
+.atext{
+    position: relative;
+}
+.atext:hover{
+    cursor: pointer;
+}
+.aline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0%;
+    background-color: #fff;
+    opacity: .7;
+}
